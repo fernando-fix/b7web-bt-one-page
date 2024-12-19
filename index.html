@@ -5,27 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shink-to-fit=no">
-
     <title>b7web-curso-bootstrap - Exemplo</title>
-
-    <!-- css import start -->
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- css import end -->
-
-    <!-- js import start -->
-    <script src="assets/js/jquery-3.3.1.min.js">/* import jquery */</script>
-    <script src="assets/js/bootstrap.bundle.min.js">/* js bundle */</script>
-    <script src="assets/js/scroll-action.js">/* needs jquery to work */</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js">/* Parallax import */</script>
-    <!-- js import end -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <!-- header -->
-    <header id="#">
-        <div class="container-fluid bg-dark">
-            <nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+    <header id="#" class="d-flex">
+        <div class="container-fluid">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-0">
                 <!-- menu hamburguer -->
                 <button class="navbar-toggler m-2" type="button" data-toggle="collapse" data-target="#navBarMenu"
                     aria-controls="navBarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,19 +25,20 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navBarMenu">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="#homepage" class="nav-link border border-light m-2 text-center">Homepage</a>
+                            <a href="#homepage"
+                                class="nav-link border border-secondary m-2 text-center active">Homepage</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#aboutus" class="nav-link border border-light m-2 text-center">About Us</a>
+                            <a href="#aboutus" class="nav-link border border-secondary m-2 text-center">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#services" class="nav-link border border-light m-2 text-center">Services</a>
+                            <a href="#services" class="nav-link border border-secondary m-2 text-center">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contact" class="nav-link border border-light m-2 text-center">Contact</a>
+                            <a href="#contact" class="nav-link border border-secondary m-2 text-center">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#external" class="nav-link border border-light m-2 text-center">External</a>
+                            <a href="#external" class="nav-link border border-secondary m-2 text-center">External</a>
                         </li>
                     </ul>
                 </div>
@@ -59,21 +49,18 @@
     <main>
         <section id="homepage">
             <!-- banner principal -->
-            <div class="container">
-                <div class="bg-1-1 d-flex justify-content-center align-items-center">
-                    <div class="text-center text-light">
-                        <h1 class="display-3 font-weight-normal text-shadow">CONQUER</h1>
-                        <p class="h3 font-weight-normal text-shadow">A simple bootstrap page</p>
-                    </div>
+            <div id="scene" class="bg-1 d-flex justify-content-center align-items-center">
+                <div data-depth="0.2" class="text-center text-light">
+                    <h1 class="display-3 font-weight-normal text-shadow">CONQUER</h1>
+                    <p class="h3 font-weight-normal text-shadow">A simple bootstrap page</p>
                 </div>
             </div>
             <!-- banner principal end -->
         </section>
         <section id="aboutus">
             <div class="container">
-                <h1>About Us</h1>
                 <!-- 3 cards de imagens  -->
-                <div class="row px-5">
+                <div class="row mt-3">
                     <div class="col d-flex justify-content-center mt-5">
                         <div class="card rounded-0" style="min-width: 19rem;">
                             <img class="card-img-top rounded-0" src="assets/img/card-2-1.jpg" alt="Card image cap">
@@ -96,7 +83,7 @@
                             <div class="card-body">
                                 <h5 class="card-title text-primary font-weight-bold text-center">Responsive Design</h5>
                                 <p class="card-text">
-                                    Conquer Template is provided by TemplateMo for free of charge. You can use this
+                                    Conquer Template is provided by templatemo for free of charge. You can use this
                                     template for any kind of website. No credit link is required. All images by
                                     Unsplash. Thank you for visiting our website. Please come again!
                                 </p>
@@ -126,7 +113,7 @@
                 <!-- 3 cards de imagens end -->
 
                 <!-- 2 cards de imagens  -->
-                <div class="row px-5">
+                <div class="row">
                     <div class="col d-flex justify-content-center mt-5">
                         <div class="card rounded-0" style="min-width: 19rem;">
                             <img class="card-img-top rounded-0" src="assets/img/card-3-1.jpg" alt="Card image cap">
@@ -171,24 +158,19 @@
             </div>
         </section>
         <section id="services">
-            <div class="container p-0">
-                <!-- banner services -->
-                <div class="container">
-                    <h1>Services</h1>
-                    <div class="bg-2-1 d-flex justify-content-center align-items-center">
-                        <div class="text-center text-light">
-                            <h1 class="display-4 font-weight-normal text-shadow">Our Services</h1>
-                            <p class="h5 font-weight-normal text-shadow">
-                                Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed
-                                id<br>
-                                felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia.<br>
-                                Etiam a mi quis arcu varius condimentum.
-                            </p>
-                        </div>
-                    </div>
+            <!-- banner services -->
+            <div class="bg-2 d-flex justify-content-center align-items-center">
+                <div class="text-center text-light">
+                    <h1 class="display-4 font-weight-normal text-shadow">Our Services</h1>
+                    <p class="h5 font-weight-normal text-shadow">
+                        Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed
+                        id<br>
+                        felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia.<br>
+                        Etiam a mi quis arcu varius condimentum.
+                    </p>
                 </div>
-                <!-- banner services end -->
             </div>
+            <!-- banner services end -->
         </section>
         <section id="contact">
             <div class="container">
@@ -274,9 +256,30 @@
         </section>
     </main>
     <footer>
-
-
     </footer>
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/scroll-action.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
+    <script>
+        $('.bg-1').parallax({
+            imageSrc: 'assets/img/bg-1.jpg',
+            speed: 0.2
+        });
+
+        $('.bg-2').parallax({
+            imageSrc: 'assets/img/bg-2.jpg',
+            speed: 0.2
+        });
+
+        // Clone menu mobile on click
+        $('.navbar-nav>li>a').on('click', function () {
+            setTimeout(function () {
+                $('.navbar-collapse').collapse('hide');
+            }, 100);
+        });
+    </script>
 </body>
 
 </html>

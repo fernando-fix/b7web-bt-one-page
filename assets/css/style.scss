@@ -1,0 +1,83 @@
+@import url('_reset.scss');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+// Text Colors
+$tc1: #FFFFFF;
+$tc2: #000000;
+// Background Colors
+$bg1: #FFFFFF;
+$bg2: #383E4C;
+$bg2h: #49505F;
+// Sizes
+$header_height: 68px;
+
+body {
+    background-color: $bg1;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+header {
+    background-color: $bg2;
+    gap: 20px;
+
+    #navBarMenu {
+        padding-top: 2px !important;
+        padding-bottom: 8px !important;
+    }
+
+    li {
+        padding: 0px !important;
+        margin-right: 4px;
+
+        a {
+            display: block !important;
+            font-size: 20px !important;
+            line-height: 20px !important;
+            color: $tc1 !important;
+            padding: 15px 25px !important;
+            transition: all 0.3s ease;
+            border: 4px solid transparent !important;
+
+            &:hover {
+                background-color: $bg2h;
+            }
+
+            &.active {
+                background-color: $bg2h;
+            }
+        }
+    }
+
+    .navbar {
+        background-color: $bg2;
+    }
+}
+
+
+#homepage {
+
+    .bg-1 {
+        height: 614px;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+#aboutus {
+    // only bootstrap
+}
+
+#services {
+
+    margin-top: 60px !important;
+
+    .bg-2 {
+        height: 320px;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 5px #000000;
+}
