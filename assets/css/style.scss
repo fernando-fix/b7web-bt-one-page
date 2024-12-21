@@ -4,6 +4,7 @@
 // Text Colors
 $tc1: #FFFFFF;
 $tc2: #000000;
+$tc3: #383E4C;
 // Background Colors
 $bg1: #FFFFFF;
 $bg2: #383E4C;
@@ -21,8 +22,39 @@ $header_height: 68px;
 }
 
 .bg-white-transparent {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.349);
+    border: none !important;
+    color: $tc2 !important;
+    font-size: 14px !important;
+
+    &::placeholder {
+        color: $tc3 !important;
+    }
+
+    &:focus {
+        background-color: rgba(255, 255, 255, 0.349);
+        border: none !important;
+        color: $tc3 !important;
+    }
+
+    &:not(:placeholder-shown) {
+        background-color: rgba(255, 255, 255, 0.349);
+        color: $tc2 !important;
+    }
 }
+
+a.hover-white,
+button.hover-white {
+    border: none !important;
+
+    &:hover {
+        background-color: $bg1 !important;
+        color: $tc2 !important;
+    }
+}
+
+
+// reusable end
 
 body {
     background-color: $bg1;
@@ -105,5 +137,12 @@ header {
                 max-width: 720px;
             }
         }
+    }
+}
+
+
+footer {
+    .footer-top {
+        max-width: 500px;
     }
 }

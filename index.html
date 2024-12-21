@@ -38,7 +38,8 @@
                             <a href="#contact" class="nav-link border border-secondary m-2 text-center">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#external" class="nav-link border border-secondary m-2 text-center">External</a>
+                            <a href="https://www.google.com" target="_blank"
+                                class="nav-link border border-secondary m-2 text-center">External</a>
                         </li>
                     </ul>
                 </div>
@@ -161,7 +162,7 @@
             <!-- banner services -->
             <div class="bg-2 d-flex justify-content-center align-items-center">
                 <div class="text-center text-light">
-                    <h1 class="display-4 font-weight-normal text-shadow">Our Services</h1>
+                    <h2 class="display-4 font-weight-normal text-shadow">Our Services</h2>
                     <p class="h5 font-weight-normal text-shadow">
                         Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed
                         id<br>
@@ -283,35 +284,35 @@
         <section id="contact" class="">
             <div class="bg-3">
                 <div class="container">
-                    <h1 class="title text-center text-light text-shadow">Contact Form</h1>
+                    <h2 class="title text-center text-light text-shadow mb-4">Contact Form</h2>
                     <form action="#" class="mx-auto">
-                        <p class="description text-center border px-2 py-3 rounded bg-white-transparent">
-                            Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id
-                            felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia.
+                        <p class="description text-center border px-4 py-3 rounded bg-white-transparent">
+                            Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam.
+                            Sed id felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia.
                             Etiam a mi quis arcu varius condimentum.
                         </p>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control bg-white-transparent" id="name"
-                                        placeholder="Name">
+                                    <input type="text" class="js_input_name form-control bg-white-transparent" id="name"
+                                        placeholder="Name" required>
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control bg-white-transparent" id="email"
-                                        placeholder="Email">
+                                        placeholder="Email" required>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control bg-white-transparent" id="subject"
-                                        placeholder="Subject">
+                                        placeholder="Subject" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <textarea class="form-control bg-white-transparent" id="message" rows="6"
-                                        placeholder="Message"></textarea>
+                                        placeholder="Message" required></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-default">Send</button>
+                                    <button type="submit" class="btn btn-lg btn-dark px-4 hover-white">Send</button>
                                 </div>
                             </div>
                         </div>
@@ -321,7 +322,21 @@
         </section>
     </main>
     <footer>
-        <h1>Footer</h1>
+        <div class="footer-top mx-auto text-secondary">
+            <h2 class="title text-center h2 mb-3 mt-5"><i>Use it free!</i></h2>
+            <p class="description text-center">
+                <i>
+                    “Conquer is free Bootstrap template from templatemo website.
+                    No backlink is required to use this layout.”
+                </i>
+            </p>
+        </div>
+        <hr>
+        <div class="footer-bottom py-3">
+            <p class="description text-center text-secondary h6">
+                Copyright © 2084 Your Company Name | Design: templatemo
+            </p>
+        </div>
     </footer>
 
     <script src="assets/js/jquery-3.3.1.min.js"></script>
@@ -344,12 +359,16 @@
             speed: 0.2
         });
 
-        // Clone menu mobile on click
+        // Close menu mobile on click
         $('.navbar-nav>li>a').on('click', function () {
             setTimeout(function () {
                 $('.navbar-collapse').collapse('hide');
             }, 100);
         });
+
+        $('.description').on('click', function () {
+            $('.js_input_name').focus();
+        })
     </script>
 </body>
 
